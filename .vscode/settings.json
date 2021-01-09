@@ -1,0 +1,29 @@
+{
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.renderWhitespace": "all",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "launch": {  
+        "editor.wordWrap": "bounded"
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      // For ESLint
+      "source.fixAll.eslint": true
+    },
+    "terminal.integrated.fontFamily": "monospace",
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "python.pythonPath": "/usr/bin/python3",
+  
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    },
+    "editor.tokenColorCustomizations": {"comments": "#ffc2c2"},
+    
+  }
+  
