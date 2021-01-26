@@ -120,15 +120,13 @@ p {
   cursor: pointer;
   padding: 8px 12px;
   margin: 0 4px;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-grey);
+  border-color: var(--color-white);
 }
 
 .navbar__toggle-btn {
@@ -387,15 +385,15 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 /* Testimonial */
@@ -494,8 +492,12 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-grey);
   }
 
+  #navbar.navbar--dar {
+    padding: 16px;
+  }
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -503,6 +505,9 @@ p {
     display: none;
   }
 
+  .navbar__menu.active {
+    display: block;
+  }
   .about__majors {
     flex-direction: column;
   }

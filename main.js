@@ -23,9 +23,16 @@ navbarMenu.addEventListener('click', (event)=>{
     if(link == null){
         return;
     }
-    
+    navbarMenu.classList.remove('active')
     scrollIntoView(link);
 });
+
+// Navbar toggle button for small screen
+
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', ()=>{
+        navbarMenu.classList.toggle('active')
+})
 
 //Handel click on "contact me" button on home
 const contactMe = document.querySelector('.home__contact');
@@ -46,7 +53,7 @@ window.addEventListener('scroll', ()=>{
 const arrowBtn = document.querySelector('.arrow-up');
 document.addEventListener('scroll', ()=>{
     if (window.scrollY > homeHeight/2){
-        console.log(window.scrollY);
+        
         arrowBtn.classList.add('visible')
         
     } else{
@@ -64,6 +71,7 @@ function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'})
 }
+
 
 
 
