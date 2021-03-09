@@ -23,7 +23,7 @@ navbarMenu.addEventListener('click', (event) => {
   }
   navbarMenu.classList.remove('active');
   const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView(link);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
 });
 
 // Navbar toggle button for small screen
@@ -37,7 +37,7 @@ navbarToggleBtn.addEventListener('click', () => {
 const contactMe = document.querySelector('.home__contact');
 contactMe.addEventListener('click', () => {
   const scrollTo = document.querySelector('#contact');
-  scrollTo.scrollIntoView('#contact');
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
 });
 
 // Make home slowly fade to transparent as the window scrolls down
@@ -56,7 +56,7 @@ document.addEventListener('scroll', () => {
     arrowBtn.classList.add('visible');
     arrowBtn.addEventListener('click', () => {
       const scrollTo = document.querySelector('#home');
-      scrollTo.scrollIntoView('#home');
+      scrollTo.scrollIntoView({ behavior: 'smooth' });
     });
   } else {
     arrowBtn.classList.remove('visible');
