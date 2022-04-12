@@ -43,10 +43,10 @@
     <!-- Home -->
     <section id="home">
       <div class="home__container">
-        <img src="imgs/profile.png" alt="Jong's profile" class="home__avatar" />
+        <img src="imgs/jong.jpg" alt="Jong's profile" class="home__avatar" />
         <h1 class="home__title">Hello, <br />I'm Jong Kim</h1>
         <h2 class="home__description">
-          I am a graduate / junior software engineer living in Sydney, Australia
+          I am a software developer living in Sydney, Australia
         </h2>
         <button class="home__contact">Contact Me</button>
       </div>
@@ -55,11 +55,14 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        I am self-motivated and like to seek new challenges to self-improve and
-        develop programming skills<br />
-        I have graduated with a Bachelor of Information Technology majoring in
-        Web and Mobile Application Development, <br />I have been awarded full
-        scholarship as a high achiever.
+        Passionate Award-Winning Software Developer with a proven ability to
+        collaborate effectively with senior developers while spending extra time
+        to be mentored. I am self-motivated and like to seek new challenges to
+        self-improve and develop programming skills. also Love building and
+        developing responsive and user-friendly web applications, I have been
+        updating side projects in my blog to learn new languages while
+        sharpening existing skills. Ready to apply my passion for coding to a
+        talented engineering team to develop quality solutions.
       </p>
       <div class="about__majors">
         <div class="major">
@@ -68,7 +71,7 @@
           </div>
           <h2 class="major__title">Front-end</h2>
           <div class="major__description">
-            HTML, CSS, JavaScript,<br />React, Web APIS, etc
+            HTML, CSS, JavaScript,<br />React, Typescript, Web APIS, etc
           </div>
         </div>
         <div class="major">
@@ -86,11 +89,22 @@
           </div>
           <h2 class="major__title">Data Analysis</h2>
           <div class="major__description">
-            Python, Selenium, Beautiful Soup, <br />Panda, Numpy etc
+            Python, SQL, Excel, <br />Panda, Numpy, Tableau etc
           </div>
         </div>
       </div>
       <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/introcept.png"
+            alt="introcept"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">Frontend Engineer Internship</p>
+            <p class="job__period">2021 March - 2021 June</p>
+          </div>
+        </div>
         <div class="job">
           <img src="imgs/jobs/humane.png" alt="humane" class="job__logo" />
           <div class="job__description">
@@ -146,7 +160,7 @@
             <div class="skill">
               <div class="skill__description">
                 <span>Javascript</span>
-                <span>80%</span>
+                <span>90%</span>
               </div>
               <div class="skill__bar">
                 <div class="skill__value" style="width: 80%"></div>
@@ -163,7 +177,7 @@
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>Python</span>
+                <span>React & Typescript</span>
                 <span>80%</span>
               </div>
               <div class="skill__bar">
@@ -178,7 +192,6 @@
                 <li><span>Visual Studio Code</span></li>
                 <li><span>Pycharm</span></li>
                 <li><span>Jupyter</span></li>
-                <li><span>IntelliJ</span></li>
               </ul>
             </div>
             <div class="etc">
@@ -200,13 +213,13 @@
         <h2>Projects</h2>
         <div class="work__categories">
           <button class="category__btn" data-filter="*">
-            All <span class="category__count">7</span>
+            All <span class="category__count">15</span>
           </button>
           <button class="category__btn" data-filter="front-end">
-            Front-end <span class="category__count">4</span>
+            JavaScript <span class="category__count">9</span>
           </button>
-          <button class="category__btn" data-filter="back-end">
-            Full stack <span class="category__count">1</span>
+          <button class="category__btn" data-filter="react">
+            React & Typescript<span class="category__count">4</span>
           </button>
           <button class="category__btn" data-filter="data-analysis">
             Python <span class="category__count">2</span>
@@ -215,21 +228,184 @@
 
         <div class="work__projects">
           <a
-            href="https://github.com/RoyalOttoc/movie_app"
+            href="https://decisive-cotton-388.notion.site/To-Do-App-Notion-To-Do-Clone-67e62bf3f0fc42ab924a8a9c0a5bd5cb"
+            class="project"
+            target="_blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/react_todo.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>To-Do App (Notion To-Do Clone)</h3>
+              <span
+                >I love to use the to-do feature in Notion, so I have created it
+                using React Beautiful Dbd library, It has features such as Add,
+                Delete, Drag, and Drop feature.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/Coin-Tracker-6c0833b9a8ad4cc7a405456fe060af70"
+            class="project"
+            target="_blank"
+            data-type="react"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/coin_tracker.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>Coin Tracker</h3>
+              <span
+                >Show 100 coins real-time information such as price, supply,
+                chart, etc.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/Diving-Visibility-Tracker-25b7051c60134d9a8f690d74aa3ca5e3"
+            class="project"
+            target="_blank"
+            data-type="react"
+          >
+            <img class="project__img" src="imgs/projects/livedive.png" alt="" />
+            <div class="project__description">
+              <h3>Diving Visibility Tracker</h3>
+              <span
+                >(Winning Project in Accenture Bootcamp 2022) <br />Collaborated
+                with backend team to build up a database to predict underwater
+                conditions with weather API, Google API, and Diving Condition
+                Algorithms</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/React-credit-card-002ceb24aee043f3add3e0e1e0222cb4"
+            class="project"
+            target="_blank"
+            data-type="react"
+          >
+            <img class="project__img" src="imgs/projects/card.png" alt="" />
+            <div class="project__description">
+              <h3>React credit card</h3>
+              <span>It displays an active credit card.</span>
+            </div>
+          </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/Light-Dark-Mode-2920215de3824d0087d09fc313622ec8"
             class="project"
             target="_blank"
             data-type="front-end"
           >
             <img
               class="project__img"
-              src="imgs/projects/movie_main.png"
+              src="imgs/projects/light_dark.png"
               alt=""
             />
             <div class="project__description">
-              <h3>Movie App</h3>
-              <span>Movie app built with React & API</span>
+              <h3>Light-Dark Mode</h3>
+              <span
+                >In this project light and dark modes can be selected using the
+                toggle switch.</span
+              >
             </div>
           </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/Joke-Teller-dbbd8811801c4abb9dd284443047e650"
+            class="project"
+            target="_blank"
+            data-type="front-end"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/joke_teller.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>Joke Teller</h3>
+              <span
+                >This is a Joke Teller using Vanilla Javascript with APIs such
+                as text to speech and JokeAPI</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/Picture-in-Picture-514631a394664c28b8770fc0bc4c9cd4"
+            class="project"
+            target="_blank"
+            data-type="front-end"
+          >
+            <img class="project__img" src="imgs/projects/pip.png" alt="" />
+            <div class="project__description">
+              <h3>Picture in Picture</h3>
+              <span
+                >The Picture-in-Picture API allows websites to create a floating
+                video window always on top of other windows so that users may
+                continue consuming media while they interact with other content
+                sites or applications on their device.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/Infinite-Scroll-3bd6fd6e44964cca84505670ff6e384d"
+            class="project"
+            target="_blank"
+            data-type="front-end"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/infinite_scroll.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>Infinite Scroll</h3>
+              <span
+                >This is an infinite scroll project using Vanilla JS, You can
+                scroll down infinitely and it shows random pictures getting from
+                Unsplash API.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://decisive-cotton-388.notion.site/Quote-Generator-4d8afff408a4468abe7974874fbc6ddf"
+            class="project"
+            target="_blank"
+            data-type="front-end"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/quote_generator.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>Quote generator</h3>
+              <span
+                >Quote generator web application with two options: local storage
+                and type.fit quote api.</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://github.com/RoyalOttoc/guess-mine"
+            class="project"
+            target="_blank"
+            data-type="front-end"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/realtime_main.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>Realtime Drawing Game</h3>
+              <span>The game bulit with SocketIO, Gulp and NodeJS</span>
+            </div>
+          </a>
+
           <a
             href="https://github.com/RoyalOttoc/ToDo-js"
             class="project"
@@ -278,22 +454,7 @@
               <span>Painting made with vanilla JS</span>
             </div>
           </a>
-          <a
-            href="https://github.com/RoyalOttoc/guess-mine"
-            class="project"
-            target="_blank"
-            data-type="back-end"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/realtime_main.png"
-              alt=""
-            />
-            <div class="project__description">
-              <h3>Realtime Drawing Game</h3>
-              <span>The game bulit with SocketIO, Gulp and NodeJS</span>
-            </div>
-          </a>
+
           <a
             href="https://github.com/RoyalOttoc/superScaraper"
             class="project"
@@ -403,7 +564,7 @@
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
-        <p class="contact__rights">2021 Jong Kim - All rights resevered</p>
+        <p class="contact__rights">2022 Jong Kim - All rights resevered</p>
       </div>
     </section>
 
